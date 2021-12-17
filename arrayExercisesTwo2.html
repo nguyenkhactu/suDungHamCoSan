@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chèn dấu "-' vào giữ 2 số chắn</title>
+
+</head>
+<body>
+<script>
+    let number = prompt();
+    let numberString = number.toString();
+    let endnumber = [numberString[0]]
+    document.write(endnumber);
+    for (let i = 1; i < numberString.length; i++) {
+        if (numberString[i - 1] % 2 === 0 && numberString[i] % 2 === 0) {
+            endnumber.push("-", numberString[i])
+        } else {
+            endnumber.push(numberString[i])
+        }
+    }
+    console.log(endnumber)
+    document.write(endnumber)
+</script>
+</body>
+</html>

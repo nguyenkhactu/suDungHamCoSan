@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển chữ hoa thành chữ thường và ngược lại</title>
+</head>
+<body>
+<script>
+    let name = "MacTheNhan";
+    let namestring = name.toString()
+
+    for (let i=0;i < namestring.length;i++ ){
+        let cat = (namestring.slice(i,i+1));
+        if (cat == cat.toUpperCase()){
+            doi = cat.toLowerCase()
+        }
+        if (cat == cat.toLowerCase()){
+            doi = cat.toUpperCase()
+        }
+        document.write(doi)
+    }
+</script>
+</body>
+</html>
